@@ -42,20 +42,11 @@ jobs:
       - name: Build Vue.js Project
         run: pnpm build
 
-      # 检查构建目录内容和大小（可选调试步骤）
-      - name: Debug Build Directory
-        run: |
-          echo "Build Directory Size:"
-          du -sh dist
-          echo "Build Directory Content:"
-          ls -l dist
-
       # 上传构建产物
-      - name: Upload Build Artifact
-        uses: actions/upload-artifact@v4
+      - name: Upload github-pages artifact
+        uses: actions/upload-pages-artifact@v1
         with:
-          name: "github-pages"
-          path: ./dist # Vue.js 默认的构建输出目录为 dist
+        path: ./dist # Vue.js 默认的构建输出目录为 dist
 
   # 部署任务
   deploy:
