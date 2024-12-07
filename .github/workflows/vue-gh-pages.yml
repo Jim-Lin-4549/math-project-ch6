@@ -43,12 +43,12 @@ jobs:
         run: pnpm build
 
       # 检查构建目录内容和大小（可选调试步骤）
-           - name: Debug Build Directory
-           run: |
-             echo "Build Directory Size:"
-             du -sh dist
-             echo "Build Directory Content:"
-             ls -l dist
+      - name: Debug Build Directory
+        run: |
+          echo "Build Directory Size:"
+          du -sh dist
+          echo "Build Directory Content:"
+          ls -l dist
 
       # 上传构建产物
       - name: Upload Build Artifact
