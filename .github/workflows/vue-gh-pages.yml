@@ -46,7 +46,7 @@ jobs:
       - name: Upload github-pages artifact
         uses: actions/upload-pages-artifact@v1
         with:
-        path: ./dist # Vue.js 默认的构建输出目录为 dist
+          path: ./dist # Vue.js 默认的构建输出目录为 dist
 
   # 部署任务
   deploy:
