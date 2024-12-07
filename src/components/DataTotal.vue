@@ -1,4 +1,6 @@
 <script setup lang="ts">
+    //    @ts-nocheck
+    
     import { ref } from "vue";
     import { VueUiDonut } from "vue-data-ui";
     

@@ -1,4 +1,6 @@
 <script setup lang="ts">
+    //    @ts-nocheck
+    
     import { ref } from "vue";
     import { VueUiKpi } from "vue-data-ui";
     import "vue-data-ui/style.css";

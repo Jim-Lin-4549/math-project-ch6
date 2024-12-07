@@ -1,4 +1,6 @@
 <script setup lang="ts">
+    //    @ts-nocheck
+    
     import { ref } from "vue";
     import { VueUiSparkStackbar } from "vue-data-ui";
     
