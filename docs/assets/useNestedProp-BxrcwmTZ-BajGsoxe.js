@@ -1,0 +1,1 @@
+import{ab as f,ac as o}from"./index-C4AKVw_k.js";function i({defaultConfig:t,userConfig:e}){if(!Object.keys(e||{}).length)return t;const n=f({defaultConfig:t,userConfig:e});return o(n)}export{i as c};
